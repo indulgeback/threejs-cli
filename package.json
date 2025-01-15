@@ -1,0 +1,35 @@
+{
+  "name": "threejs-cli",
+  "version": "1.0.0",
+  "description": "A CLI tool to quickly scaffold Three.js projects with support for multiple frameworks like Vanilla Three.js, TresJS (Vue + Three.js), and React Three Fiber (React + Three.js). Perfect for developers who want to jumpstart 3D projects without the hassle of manual setup.",
+  "type": "module",
+  "main": "bin/cli.js",
+  "bin": {
+    "create-threejs": "./bin/cli.js"
+  },
+  "scripts": {},
+  "keywords": [
+    "threejs",
+    "cli",
+    "scaffold",
+    "3d",
+    "vite",
+    "tresjs",
+    "react-three-fiber",
+    "vue",
+    "react",
+    "boilerplate",
+    "starter"
+  ],
+  "author": "LeviLiu <liuwenyu1937@outlook.com>",
+  "license": "MIT",
+  "dependencies": {
+    "adm-zip": "^0.5.16",
+    "chalk": "^5.4.1",
+    "fs-extra": "^11.2.0",
+    "inquirer": "^12.3.2"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
