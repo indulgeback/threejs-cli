@@ -28,7 +28,13 @@ npm install -g threejs-cli
 运行脚手架工具：
 
 ```bash
-threejs-cli my-project
+create-threejs
+```
+
+选择一个项目名称：
+
+```bash
+? 请输入项目名称: my-project
 ```
 
 选择框架：
@@ -53,7 +59,22 @@ npm run dev
 ### 创建一个基于 TresJS 的项目
 
 ```bash
-threejs-cli my-tresjs-project
+create-threejs
+```
+
+### 选择一个项目名称
+
+```bash
+? 请输入项目名称: my-tresjs-project
+```
+
+### 选择一个框架
+
+```bash
+? 请选择框架： (使用方向键)
+❯ TresJS (Vue + Three.js)
+Vanilla (原生 Three.js)
+React Three Fiber (React + Three.js)
 ```
 
 ### 进入项目目录并启动开发服务器

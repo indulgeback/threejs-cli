@@ -28,9 +28,16 @@ npm install -g threejs-cli
 Run the CLI tool:
 
 ```bash
-threejs-cli my-project
-Select a framework:
+create-threejs
 ```
+
+Select a project name:
+
+```bash
+Select a project name: my-project
+```
+
+Select a framework:
 
 ```bash
 ? Select a framework: (Use arrow keys)
@@ -52,7 +59,22 @@ npm run dev
 ### Create a TresJS-based project
 
 ```bash
-threejs-cli my-tresjs-project
+create-threejs
+```
+
+### Select a project name
+
+```bash
+Select a project name: my-tresjs-project
+```
+
+### Select a framework
+
+```bash
+? Select a framework: (Use arrow keys)
+❯ TresJS (Vue + Three.js)
+Vanilla (原生 Three.js)
+React Three Fiber (React + Three.js)
 ```
 
 ### Navigate to the project directory and start the development server
