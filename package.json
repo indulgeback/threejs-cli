@@ -1,6 +1,6 @@
 {
   "name": "threejs-cli",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A CLI tool to quickly scaffold Three.js projects with support for multiple frameworks like Vanilla Three.js, TresJS (Vue + Three.js), and React Three Fiber (React + Three.js). Perfect for developers who want to jumpstart 3D projects without the hassle of manual setup.",
   "type": "module",
   "main": "bin/cli.js",
