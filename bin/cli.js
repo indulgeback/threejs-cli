@@ -5,6 +5,7 @@ import https from "https"
 import inquirer from "inquirer"
 import chalk from "chalk"
 import AdmZip from "adm-zip"
+import figlet from "figlet"
 
 // 支持的框架
 const FRAMEWORKS = {
@@ -100,9 +101,23 @@ async function downloadFile(url, outputPath) {
   })
 }
 
+// ASCIIArt
+async function logASCIIArt() {
+  return new Promise((resolve) => {
+    figlet("Three JS CLI", function (err, data) {
+      if (err) {
+        return new Error("logASCIIArt error")
+      }
+      console.log(chalk.blueBright(data))
+      resolve()
+    })
+  })
+}
+
 // 主函数
 async function main() {
   try {
+    await logASCIIArt()
     const { projectName, framework } = await promptUser()
     const targetDir = await downloadTemplate(projectName, framework)
 

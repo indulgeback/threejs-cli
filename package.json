@@ -5,7 +5,7 @@
   "type": "module",
   "main": "bin/cli.js",
   "bin": {
-    "create-threejs": "./bin/cli.js"
+    "create-threejs": "bin/cli.js"
   },
   "scripts": {},
   "keywords": [
@@ -26,6 +26,7 @@
   "dependencies": {
     "adm-zip": "^0.5.16",
     "chalk": "^5.4.1",
+    "figlet": "^1.8.0",
     "fs-extra": "^11.2.0",
     "inquirer": "^12.3.2"
   },
