@@ -52,13 +52,17 @@ npm run dev
 
 ### 创建一个基于 TresJS 的项目
 
+```bash
 threejs-cli my-tresjs-project
+```
 
 ### 进入项目目录并启动开发服务器
 
+```bash
 cd my-tresjs-project
 npm install
 npm run dev
+```
 
 ## 贡献
 
