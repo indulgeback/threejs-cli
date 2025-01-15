@@ -44,11 +44,11 @@ async function downloadTemplate(projectName, framework) {
   // 定义模板仓库的下载 URL
   const templateUrls = {
     [FRAMEWORKS.VANILLA]:
-      "https://github.com/indulgeback/threejs-vanilla-template/archive/refs/heads/main.zip",
+      "https://codeload.github.com/indulgeback/threejs-vanilla-template/zip/refs/heads/main",
     [FRAMEWORKS.TRESJS]:
-      "https://github.com/indulgeback/threejs-tresjs-template/archive/refs/heads/main.zip",
+      "https://codeload.github.com/indulgeback/threejs-tresjs-template/zip/refs/heads/main",
     [FRAMEWORKS.REACT_THREE_FIBER]:
-      "https://github.com/indulgeback/threejs-react-three-fiber-template/archive/refs/heads/main.zip",
+      "https://codeload.github.com/indulgeback/threejs-react-three-fiber-template/zip/refs/heads/main",
   }
 
   const zipUrl = templateUrls[framework]
@@ -74,8 +74,9 @@ async function downloadTemplate(projectName, framework) {
     .readdirSync(targetDir)
     .find((dir) => dir.endsWith("-main"))
   if (extractedDir) {
-    fs.copySync(path.join(targetDir, extractedDir), targetDir)
-    fs.removeSync(path.join(targetDir, extractedDir))
+    const extractedDirPath = path.join(targetDir, extractedDir)
+    fs.copySync(extractedDirPath, targetDir)
+    fs.removeSync(extractedDirPath)
   }
 
   return targetDir
